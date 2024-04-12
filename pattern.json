@@ -1,0 +1,1982 @@
+[
+    {
+        "id": "wp",
+        "type":"CMS",
+        "patterns": [
+            "/wp-content/",
+            "/wp-include/"
+        ],
+        "regexPatterns": [],
+        "name": "WordPress",
+        "url": "https://wordpress.org"
+    },
+    {
+        "id": "mg",
+        "type":"CMS",
+        "patterns": [
+            "/skin/frontend/",
+            "x-magento-init"
+        ],
+        "regexPatterns": [],
+        "name": "Magento",
+        "url": "https://magento.com"
+    },
+    {
+        "id": "blg",
+        "type":"CMS",
+        "patterns": [
+            "https://www.blogger.com/static/"
+        ],
+        "regexPatterns": [],
+        "name": "Blogger By Google",
+        "url": "https://blogger.com"
+    },
+    {
+        "id": "lj",
+        "type":"CMS",
+        "patterns": [
+            "ic.pics.livejournal.com"
+        ],
+        "regexPatterns": [],
+        "name": "LiveJournal",
+        "url": "https://livejournal.com"
+    },
+    {
+        "id": "tdc",
+        "type":"CMS",
+        "patterns": [
+            "END: 3dcart stats"
+        ],
+        "regexPatterns": [],
+        "name": "3dCart",
+        "url": "https://3dcart.com"
+    },
+    {
+        "id": "apos",
+        "type":"CMS",
+        "patterns": [
+            "href=\"/apos-minified/"
+        ],
+        "regexPatterns": [],
+        "name": "Apostrophe CMS",
+        "url": "https://apostrophecms.org"
+    },
+    {
+        "id": "abc",
+        "type":"CMS",
+        "patterns": [
+            "href=\"/CatalystStyles/"
+        ],
+        "regexPatterns": [],
+        "name": "Adobe Business Catalyst",
+        "url": "https://businesscatalyst.com"
+    },
+    {
+        "id": "dru",
+        "type":"CMS",
+        "patterns": [
+            "/misc/drupal.js"
+        ],
+        "regexPatterns": [],
+        "name": "Drupal",
+        "url": "https://drupal.org"
+    },
+    {
+        "id": "joom",
+        "type":"CMS",
+        "patterns": [
+            "css/joomla.css"
+        ],
+        "regexPatterns": [],
+        "name": "Joomla",
+        "url": "https://joomla.org"
+    },
+    {
+        "id": "oc",
+        "type":"CMS",
+        "patterns": [
+            "Powered By <a href=\"http://www.opencart.com\">OpenCart",
+            "\"catalog/view/javascript/jquery/swiper/css/opencart.css\"",
+            "index.php?route="
+        ],
+        "regexPatterns": [],
+        "name": "OpenCart",
+        "url": "https://www.opencart.com"
+    },
+    {
+        "id": "xoops",
+        "type":"CMS",
+        "patterns": [
+            "/xoops.js",
+            "xoops_redirect"
+        ],
+        "regexPatterns": [],
+        "name": "XOOPS",
+        "url": "http://xoops.org"
+    },
+    {
+        "id": "tilda",
+        "type":"CMS",
+        "patterns": [
+            "tildacdn.com"
+        ],
+        "regexPatterns": [],
+        "name": "Tilda CMS",
+        "url": "https://tilda.cc/"
+    },
+    {
+        "id": "wolf",
+        "type":"CMS",
+        "patterns": [
+            "Wolf Default RSS Feed"
+        ],
+        "regexPatterns": [],
+        "name": "Wolf CMS",
+        "url": "http://www.wolfcms.org"
+    },
+    {
+        "id": "ushahidi",
+        "type":"CMS",
+        "patterns": [
+            "/ushahidi.js",
+            "alt=\"Ushahidi\""
+        ],
+        "regexPatterns": [],
+        "name": "Ushahidi",
+        "url": "http://www.ushahidi.com"
+    },
+    {
+        "id": "wgui",
+        "type":"CMS",
+        "patterns": [
+            "getWebguiProperty"
+        ],
+        "regexPatterns": [],
+        "name": "WebGUI",
+        "url": "http://www.webgui.org"
+    },
+    {
+        "id": "tidw",
+        "type":"CMS",
+        "patterns": [
+            "title: \"TiddlyWiki\"",
+            "TiddlyWiki created by Jeremy Ruston,"
+        ],
+        "regexPatterns": [],
+        "name": "TiddlyWiki",
+        "url": "https://tiddlywiki.com/"
+    },
+    {
+        "id": "sqm",
+        "type":"CMS",
+        "patterns": [
+            "Running Squiz Matrix"
+        ],
+        "regexPatterns": [],
+        "name": "Squiz Matrix",
+        "url": "https://www.squiz.net/technology/cms"
+    },
+    {
+        "id": "spin",
+        "type":"CMS",
+        "patterns": [
+            "assets.spin-cdn.com"
+        ],
+        "regexPatterns": [],
+        "name": "Spin CMS",
+        "url": "https://www.spin.cw/"
+    },
+    {
+        "id": "sdev",
+        "type":"CMS",
+        "patterns": [
+            "content=\"Solodev\" name=\"author\""
+        ],
+        "regexPatterns": [],
+        "name": "solodev",
+        "url": "https://www.solodev.com/"
+    },
+    {
+        "id": "snews",
+        "type":"CMS",
+        "patterns": [
+            "content=\"sNews"
+        ],
+        "regexPatterns": [],
+        "name": "sNews",
+        "url": "https://snewscms.com/"
+    },
+    {
+        "id": "score",
+        "type":"CMS",
+        "patterns": [
+            "/api/sitecore/"
+        ],
+        "regexPatterns": [],
+        "name": "Sitecore",
+        "url": "https://www.sitecore.com/"
+    },
+    {
+        "id": "sim",
+        "type":"CMS",
+        "patterns": [
+            "simsite/"
+        ],
+        "regexPatterns": [],
+        "name": "SIMsite",
+        "url": "https://simgroep.nl/"
+    },
+    {
+        "id": "spb",
+        "type":"CMS",
+        "patterns": [
+            "simplebo.net/"
+        ],
+        "regexPatterns": [],
+        "name": "Simpl\u00e9bo",
+        "url": "https://www.simplebo.fr"
+    },
+    {
+        "id": "silva",
+        "type":"CMS",
+        "patterns": [
+            "/silvatheme"
+        ],
+        "regexPatterns": [],
+        "name": "Silva CMS",
+        "url": "http://infrae.com/products/silva"
+    },
+    {
+        "id": "spity",
+        "type":"CMS",
+        "patterns": [
+            "serendipityQuickSearchTermField ",
+            "\"serendipity_",
+            "serendipity["
+        ],
+        "regexPatterns": [],
+        "name": "Serendipity",
+        "url": "https://docs.s9y.org/"
+    },
+    {
+        "id": "slcms",
+        "type":"CMS",
+        "patterns": [
+            "Published by Seamless.CMS.WebUI"
+        ],
+        "regexPatterns": [],
+        "name": "SeamlessCMS",
+        "url": "https://www.seamlesscms.com/"
+    },
+    {
+        "id": "rock",
+        "type":"CMS",
+        "patterns": [
+            "rock-config-trigger",
+            "rock-config-cancel-trigger"
+        ],
+        "regexPatterns": [],
+        "name": "Rock RMS",
+        "url": "https://www.rockrms.com/"
+    },
+    {
+        "id": "rcms",
+        "type":"CMS",
+        "patterns": [
+            "/rcms-f-production."
+        ],
+        "regexPatterns": [],
+        "name": "RCMS",
+        "url": "https://www.reallycms.fi/"
+    },
+    {
+        "id": "quick",
+        "type":"CMS",
+        "patterns": [
+            "CMS by Quick.Cms"
+        ],
+        "regexPatterns": [],
+        "name": "Quick.Cms",
+        "url": "https://opensolution.org/cms-system-quick-cms.html"
+    },
+    {
+        "id": "quick",
+        "type":"CMS",
+        "patterns": [
+            "Powered by Quick.Cart"
+        ],
+        "regexPatterns": [],
+        "name": "Quick.Cms",
+        "url": "https://opensolution.org/cms-system-quick-cms.html"
+    },
+    {
+        "id": "dle",
+        "type":"CMS",
+        "patterns": [
+            "DataLife Engine",
+            "dle_js.js"
+        ],
+        "regexPatterns": [],
+        "name": "DataLife Engine",
+        "url": "https://dle-news.com"
+    },
+    {
+        "id": "rcube",
+        "type":"CMS",
+        "patterns": [
+            "Roundcube Webmail",
+            "rcube_webmail"
+        ],
+        "regexPatterns": [],
+        "name": "RoundCube Webmail",
+        "url": "https://roundcube.net/"
+    },
+    {
+        "id": "bitrix",
+        "type":"CMS",
+        "patterns": [
+            "bitrix",
+            "Bitrix"
+        ],
+        "regexPatterns": [],
+        "name": "Bitrix",
+        "url": "https://www.1c-bitrix.ru"
+    },
+    {
+        "id": "pcore",
+        "type":"CMS",
+        "patterns": [
+            "\"pimcore_"
+        ],
+        "regexPatterns": [],
+        "name": "Pimcore",
+        "url": "https://pimcore.com/"
+    },
+    {
+        "id": "percms",
+        "type":"CMS",
+        "patterns": [
+            "xmlns:perc",
+            "cm/css/perc_decoration.css"
+        ],
+        "regexPatterns": [],
+        "name": "Percussion CMS",
+        "url": "https://www.percussion.com/"
+    },
+    {
+        "id": "pblue",
+        "type":"CMS",
+        "patterns": [
+            "PencilBlueController",
+            "\"pencilblueApp\""
+        ],
+        "regexPatterns": [],
+        "name": "PencilBlue",
+        "url": "http://pencilblue.org"
+    },
+    {
+        "id": "ophal",
+        "type":"CMS",
+        "patterns": [
+            "/libraries/ophal.js"
+        ],
+        "regexPatterns": [],
+        "name": "Ophal",
+        "url": "http://ophal.org"
+    },
+    {
+        "id": "sfy",
+        "type":"CMS",
+        "patterns": [
+            "Sitefinity/WebsiteTemplates"
+        ],
+        "regexPatterns": [],
+        "name": "Sitefinity",
+        "url": "https://www.sitefinity.com/"
+    },
+    {
+        "id": "zyro",
+        "type":"CMS",
+        "patterns": [
+            "assets.zyrosite.com"
+        ],
+        "regexPatterns": [],
+        "name": "Zyro",
+        "url": "https://zyro.com/"
+    },
+    {
+        "id": "otwsm",
+        "type":"CMS",
+        "patterns": [
+            "published by Open Text Web Solutions"
+        ],
+        "regexPatterns": [],
+        "name": "OpenText WSM",
+        "url": "http://www.opentext.com/"
+    },
+    {
+        "id": "ocms",
+        "type":"CMS",
+        "patterns": [
+            "/opencms/export/"
+        ],
+        "regexPatterns": [],
+        "name": "OpenCms",
+        "url": "http://www.opencms.org/"
+    },
+    {
+        "id": "odoo",
+        "type":"CMS",
+        "patterns": [
+            "odoo.session_info",
+            "var odoo ="
+        ],
+        "regexPatterns": [],
+        "name": "Odoo",
+        "url": "https://www.odoo.com/"
+    },
+    {
+        "id": "share",
+        "type":"CMS",
+        "patterns": [
+            "_spBodyOnLoadWrapper",
+            "_spPageContextInfo",
+            "_spFormOnSubmitWrapper"
+        ],
+        "regexPatterns": [],
+        "name": "Microsoft Sharepoint",
+        "url": "https://sharepoint.com"
+    },
+    {
+        "id": "octcms",
+        "type":"CMS",
+        "patterns": [
+            "/storage/app/media/"
+        ],
+        "regexPatterns": [],
+        "name": "October CMS",
+        "url": "https://octobercms.com/"
+    },
+    {
+        "id": "mura",
+        "type":"CMS",
+        "patterns": [
+            "mura.min.css",
+            "/plugins/Mura"
+        ],
+        "regexPatterns": [],
+        "name": "Mura CMS",
+        "url": "http://www.getmura.com/"
+    },
+    {
+        "id": "moto",
+        "type":"CMS",
+        "patterns": [
+            "mt-content/",
+            "moto-website-style"
+        ],
+        "regexPatterns": [],
+        "name": "Moto CMS",
+        "url": "https://www.motocms.com/"
+    },
+    {
+        "id": "mnet",
+        "type":"CMS",
+        "patterns": [
+            "mono_donottrack",
+            "monotracker.js ",
+            "_monoTracker"
+        ],
+        "regexPatterns": [],
+        "name": "Mono.net",
+        "url": "https://mono.net"
+    },
+    {
+        "id": "modx",
+        "type":"CMS",
+        "patterns": [
+            "Powered by MODX</a>"
+        ],
+        "regexPatterns": [],
+        "name": "MODX",
+        "url": "https://modx.com/"
+    },
+    {
+        "id": "methd",
+        "type":"CMS",
+        "patterns": [
+            "siteCMS:methode\"",
+            "\"contentOriginatingCMS=Methode\"",
+            "Methode tags version",
+            "/r/PortalConfig/common/assets/"
+        ],
+        "regexPatterns": [],
+        "name": "Methode",
+        "url": "https://www.eidosmedia.com"
+    },
+    {
+        "id": "lscms",
+        "type":"CMS",
+        "patterns": [
+            "var LIVESTREET_SECURITY_KEY"
+        ],
+        "regexPatterns": [],
+        "name": "LiveStreet CMS",
+        "url": "http://livestreetcms.com/"
+    },
+    {
+        "id": "koken",
+        "type":"CMS",
+        "patterns": [
+            "/koken.js",
+            "data-koken-internal"
+        ],
+        "regexPatterns": [],
+        "name": "Koken",
+        "url": "http://koken.me"
+    },
+    {
+        "id": "jimdo",
+        "type":"CMS",
+        "patterns": [
+            "jimdo_layout_css",
+            "var jimdoData",
+            "isJimdoMobileApp"
+        ],
+        "regexPatterns": [],
+        "name": "Jimdo",
+        "url": "https://www.jimdo.com/"
+    },
+    {
+        "id": "ibit",
+        "type":"CMS",
+        "patterns": [
+            "<!-- you must provide a link to Indexhibit",
+            "\"Built with <a href=http://www.indexhibit.org/>Indexhibit\"",
+            "ndxz-studio/site",
+            "ndxzsite/"
+        ],
+        "regexPatterns": [],
+        "name": "Indexhibit",
+        "url": "http://www.indexhibit.org/"
+    },
+    {
+        "id": "wflow",
+        "type":"CMS",
+        "patterns": [
+            "<!-- webflow css -->",
+            "css/webflow.css",
+            "js/webflow.js"
+        ],
+        "regexPatterns": [],
+        "name": "Webflow CMS",
+        "url": "https://webflow.com/"
+    },
+    {
+        "id": "jcms",
+        "type":"CMS",
+        "patterns": [
+            "css/jalios/core/",
+            "js/jalios/core/",
+            "jalios:ready"
+        ],
+        "regexPatterns": [],
+        "name": "Jalios JCMS",
+        "url": "http://www.jalios.com/"
+    },
+    {
+        "id": "impage",
+        "type":"CMS",
+        "patterns": [
+            "ip_themes/",
+            "ip_libs/",
+            "ip_cms/"
+        ],
+        "regexPatterns": [],
+        "name": "ImpressPages CMS",
+        "url": "https://www.impresspages.org/"
+    },
+    {
+        "id": "hotaru",
+        "type":"CMS",
+        "patterns": [
+            "/css_js_cache/hotaru_css",
+            "hotaruFooterImg",
+            "/css_js_cache/hotaru_js"
+        ],
+        "regexPatterns": [],
+        "name": "Hotaru CMS",
+        "url": "http://hotarucms.org/"
+    },
+    {
+        "id": "hippo",
+        "type":"CMS",
+        "patterns": [
+            "binaries/content/gallery/"
+        ],
+        "regexPatterns": [],
+        "name": "HIPPO CMS",
+        "url": "https://www.onehippo.org/"
+    },
+    {
+        "id": "phpn",
+        "type":"CMS",
+        "patterns": [
+            "PHP-Nuke Copyright \u00a9",
+            "PHP-Nuke theme by"
+        ],
+        "regexPatterns": [],
+        "name": "PHP Nuke",
+        "url": "https://www.phpnuke.org/"
+    },
+    {
+        "id": "flex",
+        "type":"CMS",
+        "patterns": [
+            "FlexCMP - CMS per Siti Accessibili",
+            "/flex/TemplatesUSR/",
+            "FlexCMP - Digital Experience Platform (DXP)"
+        ],
+        "regexPatterns": [],
+        "name": "FlexCMP",
+        "url": "https://www.flexcmp.com"
+    },
+    {
+        "id": "ezpu",
+        "type":"CMS",
+        "patterns": [
+            "copyright\" content=\"eZ Systems\"",
+            "ezcontentnavigationpart",
+            "ezinfo/copyright"
+        ],
+        "regexPatterns": [],
+        "name": "eZ Publish",
+        "url": "https://ez.no/"
+    },
+    {
+        "id": "e107",
+        "type":"CMS",
+        "patterns": [
+            "e107_files/e107.js",
+            "e107_themes/",
+            "e107_plugins/"
+        ],
+        "regexPatterns": [],
+        "name": "e107",
+        "url": "https://e107.org/"
+    },
+    {
+        "id": "dnn",
+        "type":"CMS",
+        "patterns": [
+            "<!-- DNN Platform",
+            " by DNN Corporation -->",
+            "DNNROBOTS",
+            "js/dnncore.js?",
+            "dnn_ContentPane",
+            "js/dnn.js?"
+        ],
+        "regexPatterns": [],
+        "name": "DNN Platform",
+        "url": "http://www.dnnsoftware.com"
+    },
+    {
+        "id": "phpbb",
+        "type":"CMS",
+        "patterns": [
+            "phpBBstyle",
+            "phpBBMobileStyle",
+            "style_cookie_settings"
+        ],
+        "regexPatterns": [],
+        "name": "phpBB",
+        "url": "http://phpbb.com"
+    },
+    {
+        "id": "dede",
+        "type":"CMS",
+        "patterns": [
+            "dede_fields",
+            "dede_fieldshash",
+            "DedeAjax",
+            "DedeXHTTP",
+            "include/dedeajax2.js",
+            "css/dedecms.css"
+        ],
+        "regexPatterns": [],
+        "name": "DEDE CMS",
+        "url": "http://dedecms.com/"
+    },
+    {
+        "id": "orchd",
+        "type":"CMS",
+        "patterns": [
+            "/Orchard.jQuery/",
+            "orchard.themes",
+            "orchard-layouts-root"
+        ],
+        "regexPatterns": [],
+        "name": "Orchard CMS",
+        "url": "https://orchardproject.net/"
+    },
+    {
+        "id": "cbox",
+        "type":"CMS",
+        "patterns": [
+            "modules/contentbox/themes/"
+        ],
+        "regexPatterns": [],
+        "name": "ContentBox",
+        "url": "https://www.contentboxcms.org/"
+    },
+    {
+        "id": "conful",
+        "type":"CMS",
+        "patterns": [
+            "data-contentful",
+            ".contentful.com/",
+            ".ctfassets.net/"
+        ],
+        "regexPatterns": [],
+        "name": "Contentful",
+        "url": "https://www.contentful.com/"
+    },
+    {
+        "id": "contensis",
+        "type":"CMS",
+        "patterns": [
+            "Contensis.current",
+            "ContensisSubmitFromTextbox",
+            "ContensisTextOnly"
+        ],
+        "regexPatterns": []
+    },
+    {
+        "id": "contao",
+        "type":"CMS",
+        "patterns": [
+            "system/cron/cron.txt"
+        ],
+        "regexPatterns": [],
+        "name": "Contao CMS",
+        "url": "https://contao.org/en/"
+    },
+    {
+        "id": "bboard",
+        "type":"CMS",
+        "patterns": [
+            "/burningBoard.css",
+            "wcf/style/"
+        ],
+        "regexPatterns": [],
+        "name": "Burning Board",
+        "url": "https://www.woltlab.com/"
+    },
+    {
+        "id": "con5",
+        "type":"CMS",
+        "patterns": [
+            "/concrete/images",
+            "/concrete/css",
+            "/concrete/js"
+        ],
+        "regexPatterns": [],
+        "name": "Concrete5 CMS",
+        "url": "https://www.concrete5.org/"
+    },
+    {
+        "id": "discrs",
+        "type":"CMS",
+        "patterns": [
+            "discourse_theme_id",
+            "discourse_current_homepage"
+        ],
+        "regexPatterns": []
+    },
+    {
+        "id": "discuz",
+        "type":"CMS",
+        "patterns": [
+            "discuz_uid",
+            "discuz_tips",
+            "content=\"Discuz! Team and Comsenz UI Team\""
+        ],
+        "regexPatterns": [],
+        "name": "Discuz!",
+        "url": "http://www.discuz.net/"
+    },
+    {
+        "id": "flarum",
+        "type":"CMS",
+        "patterns": [
+            "flarum-loading",
+            "flarum/app"
+        ],
+        "regexPatterns": [],
+        "name": "Flarum",
+        "url": "https://flarum.org/"
+    },
+    {
+        "id": "ipb",
+        "type":"CMS",
+        "patterns": [
+            "/* IP.Board",
+            "js/ipb.js",
+            "js/ipb.lang.js"
+        ],
+        "regexPatterns": [],
+        "name": "IP.Board community forum",
+        "url": "https://www.invisioncommunity.com/"
+    },
+    {
+        "id": "ipb",
+        "type":"CMS",
+        "patterns": [
+            "ips_usernameand ips_password"
+        ],
+        "regexPatterns": [],
+        "name": "IP.Board community forum",
+        "url": "https://www.invisioncommunity.com/"
+    },
+    {
+        "id": "minibb",
+        "type":"CMS",
+        "patterns": [
+            "bb_default_style.css",
+            "name=\"URL\" content=\"http://www.minibb.net/\""
+        ],
+        "regexPatterns": [],
+        "name": "miniBB",
+        "url": "http://www.minibb.com/"
+    },
+    {
+        "id": "mybb",
+        "type":"CMS",
+        "patterns": [
+            "var MyBBEditor"
+        ],
+        "regexPatterns": [],
+        "name": "MyBB",
+        "url": "https://mybb.com/"
+    },
+    {
+        "id": "nodebb",
+        "type":"CMS",
+        "patterns": [
+            "/assets/nodebb.min.js",
+            "/plugins/nodebb-"
+        ],
+        "regexPatterns": [],
+        "name": "NodeBB",
+        "url": "https://nodebb.org/"
+    },
+    {
+        "id": "punbb",
+        "type":"CMS",
+        "patterns": [
+            "PUNBB.env",
+            "typeof PUNBB ==="
+        ],
+        "regexPatterns": [],
+        "name": "PunBB",
+        "url": "http://punbb.informer.com/"
+    },
+    {
+        "id": "smf",
+        "type":"CMS",
+        "patterns": [
+            "Powered by SMF"
+        ],
+        "regexPatterns": [],
+        "name": "Simple Machines Forum",
+        "url": "http://simplemachines.org/"
+    },
+    {
+        "id": "vanilla",
+        "type":"CMS",
+        "patterns": [
+            "vanilla_discussions_index",
+            "vanilla_categories_index"
+        ],
+        "regexPatterns": [],
+        "name": "Vanilla Forums",
+        "url": "https://vanillaforums.com"
+    },
+    {
+        "id": "xf",
+        "type":"CMS",
+        "patterns": [
+            "Forum software by XenForo&trade;",
+            "<html id=\"XenForo\"",
+            "css.php?css=xenforo"
+        ],
+        "regexPatterns": [],
+        "name": "XenForo",
+        "url": "https://xenforo.com/"
+    },
+    {
+        "id": "xmb",
+        "type":"CMS",
+        "patterns": [
+            "<!-- Powered by XMB",
+            "<!-- The XMB Group -->",
+            "Powered by XMB"
+        ],
+        "regexPatterns": [],
+        "name": "XMB",
+        "url": "https://www.xmbforum.com/"
+    },
+    {
+        "id": "yabb",
+        "type":"CMS",
+        "patterns": [
+            "yabbfiles/"
+        ],
+        "regexPatterns": [],
+        "name": "YaBB (Yet another Bulletin Board)",
+        "url": "http://www.yabbforum.com/"
+    },
+    {
+        "id": "aef",
+        "type":"CMS",
+        "patterns": [
+            "Powered By AEF"
+        ],
+        "regexPatterns": [],
+        "name": "Advanced Electron Forum",
+        "url": "http://www.anelectron.com/"
+    },
+    {
+        "id": "fudf",
+        "type":"CMS",
+        "patterns": [
+            "Powered by: FUDforum"
+        ],
+        "regexPatterns": [],
+        "name": "FUDforum",
+        "url": "http://fudforum.org/forum/"
+    },
+    {
+        "id": "phorum",
+        "type":"CMS",
+        "patterns": [
+            "<div id=\"phorum\">"
+        ],
+        "regexPatterns": [],
+        "name": "Phorum",
+        "url": "https://www.phorum.org/"
+    },
+    {
+        "id": "yaf",
+        "type":"CMS",
+        "patterns": [
+            "\"YafHead"
+        ],
+        "regexPatterns": [],
+        "name": "Yet Another Forum (YAF)",
+        "url": "http://www.yetanotherforum.net"
+    },
+    {
+        "id": "nnf",
+        "type":"CMS",
+        "patterns": [
+            "<!-- NoNonsense Forum"
+        ],
+        "regexPatterns": [],
+        "name": "NoNonsense Forum",
+        "url": "http://camendesign.com/nononsense_forum"
+    },
+    {
+        "id": "mvnf",
+        "type":"CMS",
+        "patterns": [
+            "/mvnplugin/mvnforum/"
+        ],
+        "regexPatterns": [],
+        "name": "mvnForum",
+        "url": "https://sourceforge.net/projects/mvnforum/"
+    },
+    {
+        "id": "aspf",
+        "type":"CMS",
+        "patterns": [
+            "aspnetforum.css\"",
+            "_AspNetForumContentPlaceHolder"
+        ],
+        "regexPatterns": [],
+        "name": "AspNetForum",
+        "url": "https://www.jitbit.com/asp-net-forum/"
+    },
+    {
+        "id": "jf",
+        "type":"CMS",
+        "patterns": [
+            "jforum/templates/"
+        ],
+        "regexPatterns": [],
+        "name": "JForum",
+        "url": "http://www.jforum.net/"
+    },
+    {
+        "id": "abuy",
+        "type":"CMS",
+        "patterns": [
+            "This OnlineStore is brought to you by ViA-Online GmbH Afterbuy."
+        ],
+        "regexPatterns": [],
+        "name": "Afterbuy",
+        "url": "https://www.afterbuy.de"
+    },
+    {
+        "id": "arstta",
+        "type":"CMS",
+        "patterns": [
+            "/arastta.js"
+        ],
+        "regexPatterns": [],
+        "name": "Arastta",
+        "url": "https://arastta.org/"
+    },
+    {
+        "id": "bizw",
+        "type":"CMS",
+        "patterns": [
+            "<script src='//bizweb.dktcdn.net"
+        ],
+        "regexPatterns": [],
+        "name": "Bizweb",
+        "url": "https://www.sapo.vn"
+    },
+    {
+        "id": "cloudc",
+        "type":"CMS",
+        "patterns": [
+            "cloudcart\",\"title"
+        ],
+        "regexPatterns": [],
+        "name": "CloudCart",
+        "url": "https://cloudcart.com/"
+    },
+    {
+        "id": "cmshop",
+        "type":"CMS",
+        "patterns": [
+            "framework/colormekit.css"
+        ],
+        "regexPatterns": [],
+        "name": "ColorMeShop",
+        "url": "https://shop-pro.jp/"
+    },
+    {
+        "id": "mdle",
+        "type":"CMS",
+        "patterns": [
+            "<meta name=\"keywords\" content=\"moodle"
+        ],
+        "regexPatterns": [],
+        "name": "Moodle",
+        "url": "https://moodle.com/"
+    },
+    {
+        "id": "orkis",
+        "type":"CMS",
+        "patterns": [
+            "<meta property=\"ajaris:baseURL\"",
+            "<meta property=\"ajaris:language\"",
+            "<meta property=\"ajaris:ptoken\""
+        ],
+        "regexPatterns": [],
+        "name": "ORKIS Ajaris Websuite",
+        "url": "http://www.orkis.com/"
+    },
+    {
+        "id": "cmdia",
+        "type":"CMS",
+        "patterns": [
+            "window.Comandia = JSON.parse",
+            "<script src=\"https://cdn.mycomandia.com/static/shop/common/js/functions.js\"></script>"
+        ],
+        "regexPatterns": [],
+        "name": "Comandia",
+        "url": "https://www.comandia.com/"
+    },
+    {
+        "id": "elcd",
+        "type":"CMS",
+        "patterns": [
+            "/bundles/elcodimetric/js/tracker.js"
+        ],
+        "regexPatterns": [],
+        "name": "Elcodi",
+        "url": "http://elcodi.io/"
+    },
+    {
+        "id": "epgs",
+        "type":"CMS",
+        "patterns": [
+            "de_epages.remotesearch.ui.suggest",
+            "require([['de_epages'"
+        ],
+        "regexPatterns": [],
+        "name": "ePages",
+        "url": "https://epages.com"
+    },
+    {
+        "id": "for3",
+        "type":"CMS",
+        "patterns": [
+            "href=\"https://www.fortune3.com/en/siterate/rate.css\""
+        ],
+        "regexPatterns": [],
+        "name": "Fortune3",
+        "url": "https://www.fortune3.com/"
+    },
+    {
+        "id": "btree",
+        "type":"CMS",
+        "patterns": [
+            "<body class=\"gridlock shifter\">::::<div class=\"shifter-page\">"
+        ],
+        "regexPatterns": [],
+        "name": "BigTree CMS",
+        "url": "https://www.bigtreecms.org/"
+    },
+    {
+        "id": "pmoc",
+        "type":"CMS",
+        "patterns": [
+            "list-unstyled::::editable-zone"
+        ],
+        "regexPatterns": [],
+        "name": "Proximis Omnichannel",
+        "url": "https://www.proximis.com"
+    },
+    {
+        "id": "sfcc",
+        "type":"CMS",
+        "patterns": [
+            "<!-- Demandware Analytics code",
+            "<!-- Demandware Apple Pay -->"
+        ],
+        "regexPatterns": [],
+        "name": "Salesforce Commerce Cloud",
+        "url": "https://demandware.com/"
+    },
+    {
+        "id": "sazito",
+        "type":"CMS",
+        "patterns": [
+            "icons__icons___XoCGh",
+            "styles__empty___3WCoC",
+            "icons__icon-phone___22Eum"
+        ],
+        "regexPatterns": [],
+        "name": "Sazito",
+        "url": "https://sazito.com/"
+    },
+    {
+        "id": "shopatron",
+        "type":"CMS",
+        "patterns": [
+            "SHOPATRON-CRAWLER"
+        ],
+        "regexPatterns": [],
+        "name": "Shopatron",
+        "url": "https://www.shopatron.com"
+    },
+    {
+        "id": "umbraco",
+        "type":"CMS",
+        "patterns": [
+            "Umbraco/",
+            "umbraco/"
+        ],
+        "regexPatterns": [],
+        "name": "Umbraco",
+        "url": "https://umbraco.com"
+    },
+    {
+        "id": "shoper",
+        "type":"CMS",
+        "patterns": [
+            "Sklep internetowy Shoper.pl"
+        ],
+        "regexPatterns": [],
+        "name": "Shoper",
+        "url": "https://www.shoper.pl"
+    },
+    {
+        "id": "shopery",
+        "type":"CMS",
+        "patterns": [
+            "//www.googletagmanager.com/ns.html?id=GTM-N2T2D3"
+        ],
+        "regexPatterns": [],
+        "name": "Shopery",
+        "url": "https://shopery.com/"
+    },
+    {
+        "id": "shopfa",
+        "type":"CMS",
+        "patterns": [
+            "shopfa_license"
+        ],
+        "regexPatterns": [],
+        "name": "ShopFA",
+        "url": "https://shopfa.com/"
+    },
+    {
+        "id": "smartstore",
+        "type":"CMS",
+        "patterns": [
+            "/smjslib.js",
+            "/smartstore.core.js"
+        ],
+        "regexPatterns": [],
+        "name": "Smartstore",
+        "url": "https://www.smartstore.com"
+    },
+    {
+        "id": "weebly",
+        "type":"CMS",
+        "patterns": [
+            "_W.configDomain",
+            "Weebly.footer"
+        ],
+        "regexPatterns": [],
+        "name": "Weebly",
+        "url": "https://www.weebly.com/"
+    },
+    {
+        "id": "whmcs",
+        "type":"CMS",
+        "patterns": [
+            "js/whmcs.js"
+        ],
+        "regexPatterns": [],
+        "name": "WHMCS",
+        "url": "https://www.whmcs.com/"
+    },
+    {
+        "id": "opennemas",
+        "type":"CMS",
+        "patterns": [
+            "OpenNeMaS CMS by Openhost",
+            "var u = \"https://piwik.openhost.es/\""
+        ],
+        "regexPatterns": [],
+        "name": "OpenNemas CMS",
+        "url": "https://www.opennemas.com/"
+    },
+    {
+        "id": "zencart",
+        "type":"CMS",
+        "patterns": [
+            "zenid=",
+            "Congratulations! You have successfully installed your Zen Cart",
+            "Google Code for ZenCart Google",
+            "Powered by ZenCart",
+            "sideboxpzen-cart",
+            "stylesheet_zen_lightbox.css"
+        ],
+        "regexPatterns": [],
+        "name": "Zen Cart CMS",
+        "url": "https://www.zen-cart.com/"
+    },
+    {
+        "id": "ipo",
+        "type":"CMS",
+        "patterns": [
+            "Redak\u010dn\u00ed syst\u00e9m IPO",
+            "cdn.antee.cz/",
+            "ipo.min.js"
+        ],
+        "regexPatterns": [],
+        "name": "IPO CMS",
+        "url": "https://www.antee.cz/"
+    },
+    {
+        "id": "hugo",
+        "type":"CMS",
+        "patterns": [
+            "Built using HUGO"
+        ],
+        "regexPatterns": [],
+        "name": "Hugo",
+        "url": "https://gohugo.io/"
+    },
+    {
+        "id": "squarespace",
+        "type":"CMS",
+        "patterns": [
+            "This is Squarespace",
+            "End of Squarespace Headers"
+        ],
+        "regexPatterns": [],
+        "name": "Squarespace",
+        "url": "https://www.squarespace.com/"
+    },
+    {
+        "id": "afsto",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "('|\")https\\://afosto\\-cdn(.*?)\\.afosto\\.com(.*?)('|\")"
+        ],
+        "name": "Afosto",
+        "url": "https://afosto.com/"
+    },
+    {
+        "id": "jf",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)JForum(.*?)\\</a\\>"
+        ],
+        "name": "JForum",
+        "url": "http://www.jforum.net/"
+    },
+    {
+        "id": "aspf",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)AspNetForum(.*?)(\\</a\\>|\\</span\\>)"
+        ],
+        "name": "AspNetForum",
+        "url": "https://www.jitbit.com/asp-net-forum/"
+    },
+    {
+        "id": "mcb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)MercuryBoard(.*?)\\</a\\>"
+        ],
+        "name": "MercuryBoard",
+        "url": "http://www.mercuryboard.com/"
+    },
+    {
+        "id": "mvnf",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)mwForum(.*?)Markus Wichitill"
+        ],
+        "name": "mvnForum",
+        "url": "https://sourceforge.net/projects/mvnforum/"
+    },
+    {
+        "id": "mvnf",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)mvnForum(.*?)\\</a\\>"
+        ],
+        "name": "mvnForum",
+        "url": "https://sourceforge.net/projects/mvnforum/"
+    },
+    {
+        "id": "myupb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by myUPB(.*?)\\</a\\>"
+        ],
+        "name": "myUPB",
+        "url": "http://www.myupb.com"
+    },
+    {
+        "id": "ubbt",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "\\>Powered by UBB\\.threads(.*?)\\</a\\>"
+        ],
+        "name": "UBB.threads",
+        "url": "http://www.ubbcentral.com/"
+    },
+    {
+        "id": "nnf",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)NoNonsense Forum\\</a\\>"
+        ],
+        "name": "NoNonsense Forum",
+        "url": "http://camendesign.com/nononsense_forum"
+    },
+    {
+        "id": "yaf",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "\\>Powered by YAF\\.NET(.*?)\\</a\\>"
+        ],
+        "name": "Yet Another Forum (YAF)",
+        "url": "http://www.yetanotherforum.net"
+    },
+    {
+        "id": "aef",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "aefonload(.*?)\\</script\\>"
+        ],
+        "name": "Advanced Electron Forum",
+        "url": "http://www.anelectron.com/"
+    },
+    {
+        "id": "vanilla",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "applications/vanilla/(.*?)\\.js"
+        ],
+        "name": "Vanilla Forums",
+        "url": "https://vanillaforums.com"
+    },
+    {
+        "id": "smf",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "var smf_(theme_url|images_url|scripturl) \\=(.*?)\\</script\\>"
+        ],
+        "name": "Simple Machines Forum",
+        "url": "http://simplemachines.org/"
+    },
+    {
+        "id": "punbb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)PunBB\\</a\\>"
+        ],
+        "name": "PunBB",
+        "url": "http://punbb.informer.com/"
+    },
+    {
+        "id": "nodebb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)NodeBB\\</a\\>"
+        ],
+        "name": "NodeBB",
+        "url": "https://nodebb.org/"
+    },
+    {
+        "id": "mybb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "(Powered By|href\\=\"https\\://www\\.mybb\\.com\")(.*?)(MyBB|MyBB Group)\\</a\\>"
+        ],
+        "name": "MyBB",
+        "url": "https://mybb.com/"
+    },
+    {
+        "id": "minibb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "(powered by|http\\://www\\.miniBB\\.net)(.*?)(miniBB|miniBB forum software)"
+        ],
+        "name": "miniBB",
+        "url": "http://www.minibb.com/"
+    },
+    {
+        "id": "fluxbb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)FluxBB"
+        ],
+        "name": "FluxBB",
+        "url": "https://fluxbb.org/"
+    },
+    {
+        "id": "ipb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "invisioncommunity\\.com(.*?)Powered by Invision Community"
+        ],
+        "name": "IP.Board community forum",
+        "url": "https://www.invisioncommunity.com/"
+    },
+    {
+        "id": "ipb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "ipb\\.(vars|templates|lang)\\[(.*?)=(.*?)\\</script\\>"
+        ],
+        "name": "IP.Board community forum",
+        "url": "https://www.invisioncommunity.com/"
+    },
+    {
+        "id": "bboard",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "(a href\\=\"http\\://www\\.woltlab\\.com\"|Forum Software|Forensoftware)(.*?)Burning Board(.*?)\\</strong\\>"
+        ],
+        "name": "Burning Board",
+        "url": "https://www.woltlab.com/"
+    },
+    {
+        "id": "dscrs",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Discourse\\.(.*?)\\=(.*?)\\</script\\>"
+        ],
+        "name": "Discourse",
+        "url": "https://www.discourse.org/"
+    },
+    {
+        "id": "arc",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "ping\\.src \\= node\\.href(.*?)\\</script\\>"
+        ],
+        "name": "Arc Forum",
+        "url": "http://arclanguage.org/"
+    },
+    {
+        "id": "hippo",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "binaries/(.*?)/content/gallery/"
+        ],
+        "name": "HIPPO CMS",
+        "url": "https://www.onehippo.org/"
+    },
+    {
+        "id": "phpc",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "\\.php\\?m\\=(.*?)&c\\=(.*?)&a\\=(.*?)&catid\\="
+        ],
+        "name": "phpCMS",
+        "url": "http://www.phpcms.cn/"
+    },
+    {
+        "id": "phpbb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by (.*?)phpBB"
+        ],
+        "name": "phpBB",
+        "url": "http://phpbb.com"
+    },
+    {
+        "id": "phpbb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "copyright(.*?)phpBB Group"
+        ],
+        "name": "phpBB",
+        "url": "http://phpbb.com"
+    },
+    {
+        "id": "coton",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)Cotonti"
+        ],
+        "name": "Cotonti",
+        "url": "https://www.cotonti.com/"
+    },
+    {
+        "id": "con5",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "CCM_(.*?)(_|)(MODE|URL|PATH|FILENAME|REL|CID)"
+        ],
+        "name": "Concrete5 CMS",
+        "url": "https://www.concrete5.org/"
+    },
+    {
+        "id": "bigc",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "\\<link href\\=(.*?)cdn(\\d).bigcommerce\\.com\\/"
+        ],
+        "name": "BigCommerce",
+        "url": "https://www.bigcommerce.com/"
+    },
+    {
+        "id": "bigw",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "\\<a href\\=(.*?)main_bigware_(\\d)\\.php"
+        ],
+        "name": "Bigware",
+        "url": "https://bigware.de"
+    },
+    {
+        "id": "bizw",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "var Bizweb \\=(.*?)\\</script\\>"
+        ],
+        "name": "Bizweb",
+        "url": "https://www.sapo.vn"
+    },
+    {
+        "id": "cexec",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "var clientexec \\=(.*?)\\</script\\>",
+            "Powered by(.*?)http\\://www\\.clientexec\\.com\\?source\\=poweredby(.*?)\\</a\\>"
+        ],
+        "name": "Clientexec",
+        "url": "https://www.clientexec.com/"
+    },
+    {
+        "id": "cloudc",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "\\<meta name\\=(.*?)author(.*?)CloudCart LLC(.*?)\\>"
+        ],
+        "name": "CloudCart",
+        "url": "https://cloudcart.com/"
+    },
+    {
+        "id": "cmshop",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "var Colorme \\=(.*?)\\</script\\>"
+        ],
+        "name": "ColorMeShop",
+        "url": "https://shop-pro.jp/"
+    },
+    {
+        "id": "cmdia",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "https://cdn.mycomandia.com/uploads/comandia_(.*?)/r/(.*?)//js/(functions|main).js"
+        ],
+        "name": "Comandia",
+        "url": "https://www.comandia.com/"
+    },
+    {
+        "id": "cosmos",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "<script(.*?)cosmoshop_functions.js(.*?)</script>"
+        ],
+        "name": "Cosmoshop",
+        "url": "https://www.cosmoshop.de/"
+    },
+    {
+        "id": "csc",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            ".cm-noscript(.*?)</script>"
+        ],
+        "name": "CS Cart",
+        "url": "https://www.cs-cart.com/"
+    },
+    {
+        "id": "cubec",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "<link(.*?)cubecart.common.css(.*?)>"
+        ],
+        "name": "CubeCart",
+        "url": "https://www.cubecart.com/"
+    },
+    {
+        "id": "abda",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "<a href(.*?)http://www.almubda.net(.*?)Powered by Al Mubda(.*?)</a>"
+        ],
+        "name": "Al Mubda",
+        "url": "http://www.almubda.net/"
+    },
+    {
+        "id": "dweb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "<!--(.*?)Dynamicweb Software(.*?)-->"
+        ],
+        "name": "Dynamicweb",
+        "url": "https://www.dynamicweb.dk/"
+    },
+    {
+        "id": "ecc",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "<script(.*?)eccube.js(.*?)</script>",
+            "<script(.*?)win_op.js(.*?)</script>",
+            "<script(.*?)cube.site.js(.*?)</script>"
+        ],
+        "name": "EC-CUBE",
+        "url": "https://www.ec-cube.net/"
+    },
+    {
+        "id": "elcd",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "<script(.*?)Tracker generator for elcodi bamboo store(.*?)</script>"
+        ],
+        "name": "Elcodi",
+        "url": "http://elcodi.io/"
+    },
+    {
+        "id": "epgs",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "href=(.*?)/epages/(.*?).sf(.*?)</a>"
+        ],
+        "name": "ePages",
+        "url": "https://epages.com"
+    },
+    {
+        "id": "ezpub",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "<script(.*?)/extension/iagutils/design/ezwebin/(.*?)</script>"
+        ],
+        "name": "eZ Publish",
+        "url": "https://ez.no/"
+    },
+    {
+        "id": "for3",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Powered by(.*?)Fortune3</a>"
+        ],
+        "name": "Fortune3",
+        "url": "https://www.fortune3.com/"
+    },
+    {
+        "id": "btree",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "Built on(.*?)bigtreecms.org(.*?)BigTree CMS"
+        ],
+        "name": "BigTree CMS",
+        "url": "https://www.bigtreecms.org/"
+    },
+    {
+        "id": "shoper",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "powered(.*?)opensolution.org(.*?)Sklep internetowy"
+        ],
+        "name": "Shoper",
+        "url": "https://www.shoper.pl"
+    },
+    {
+        "id": "sfcc",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "href\\=(.*?)on/demandware.static"
+        ],
+        "name": "Salesforce Commerce Cloud",
+        "url": "https://demandware.com/"
+    },
+    {
+        "id": "shopatron",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "href\\=(.*?)mediacdn.shopatron.com",
+            "href\\=(.*?)cdn.shptrn.com"
+        ],
+        "name": "Shopatron",
+        "url": "https://www.shopatron.com"
+    },
+    {
+        "id": "shoper",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "href\\=(.*?)rwd_shoper(|_1)"
+        ],
+        "name": "Shoper",
+        "url": "https://www.shoper.pl"
+    },
+    {
+        "id": "shopery",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "(cdn|font).shopery.com/"
+        ],
+        "name": "Shopery",
+        "url": "https://shopery.com/"
+    },
+    {
+        "id": "shopfa",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "href\\=(.*?)cdn.shopfa.com/",
+            "href\\=(.*?)cdnfa.com/"
+        ],
+        "name": "ShopFA",
+        "url": "https://shopfa.com/"
+    },
+    {
+        "id": "shopify",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "id=(\"|')(shopify-digital-wallet|shopify-features)",
+            "href\\=(.*?)cdn.shopify.com/"
+        ],
+        "name": "Shopify",
+        "url": "https://www.shopify.com/"
+    },
+    {
+        "id": "shoptet",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "href\\=(.*?)cdn.myshoptet.com/",
+            "content=\"Shoptet.sk\"",
+            "var shoptet="
+        ],
+        "name": "Shoptet",
+        "url": "https://www.shoptet.cz/"
+    },
+    {
+        "id": "smartstore",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "css/smartstore.(core|theme|modules).css"
+        ],
+        "name": "Smartstore",
+        "url": "https://www.smartstore.com"
+    },
+    {
+        "id": "spree",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "src=(.*?)spree/(products|brands)",
+            "Spree.(api_key|routes|translations)"
+        ],
+        "name": "Spree",
+        "url": "https://spreecommerce.org/"
+    },
+    {
+        "id": "brightspot",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "meta name\\=(\"|')brightspot.(contentId|cached)",
+            "href=(\"|')brightspotcdn"
+        ],
+        "name": "Brightspot CMS",
+        "url": "https://www.brightspot.com/"
+    },
+    {
+        "id": "amiro",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "amiro_sys_(css|js).php"
+        ],
+        "name": "Amiro.CMS",
+        "url": "https://www.amiro.ru"
+    },
+    {
+        "id": "weebly",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "weebly-(footer|icon)"
+        ],
+        "name": "Weebly",
+        "url": "https://www.weebly.com/"
+    },
+    {
+        "id": "ekmps",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "/ekmps/(scripts|css|assets|images|shops|designs)",
+            "globalstats.ekmsecure.com/hits/stats(-global).js"
+        ],
+        "name": "ekmPowershop",
+        "url": "https://www.ekm.com/"
+    },
+    {
+        "id": "godaddywb",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "sf_(wrapper|footer|banner|subnavigation|pagetitle)"
+        ],
+        "name": "GoDaddy Website Builder",
+        "url": "https://godaddy.com/websites/website-builder"
+    },
+    {
+        "id": "opennemas",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "onm-(new|image|carousel|big|cropped)"
+        ],
+        "name": "OpenNemas CMS",
+        "url": "https://www.opennemas.com/"
+    },
+    {
+        "id": "ipo",
+        "type":"CMS",
+        "patterns": [],
+        "regexPatterns": [
+            "ipo(pagetext|mainframe|footer|menuwrapper|copyright|header|main|menu|statistics)"
+        ],
+        "name": "IPO CMS",
+        "url": "https://www.antee.cz/"
+    },
+    {
+        "id": "grafana",
+        "type":"TOOL",
+        "patterns": [
+            "window.grafanaBootData",
+            "class=\"grafana-app\""
+        ],
+        "regexPatterns": [
+        ],
+        "name": "Grafana",
+        "url": "https://grafana.com/"
+    }
+]
