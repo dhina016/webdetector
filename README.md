@@ -22,6 +22,11 @@ git clone https://github.com/yourusername/webdetector.git
 cd webdetector
 go build -o webdetector
 ```
+or 
+```bash
+go install github.com/dhina016/webdetector@latest
+```
+
 
 ## Usage
 
