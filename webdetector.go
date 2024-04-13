@@ -14,6 +14,7 @@ import (
     "regexp"
     "strings"
     "time"
+    "golang.org/x/crypto/ssh/terminal"
 )
 
 // Embed the pattern.json file
@@ -38,7 +39,8 @@ type DetectionResult struct {
 
 // printBanner prints a startup banner when the program is launched
 func printBanner() {
-    fmt.Println(`
+    if terminal.IsTerminal(int(os.Stdout.Fd())) { // Check if the output is to a terminal
+        fmt.Println(`
 ██╗    ██╗███████╗██████╗ ██████╗ ███████╗████████╗███████╗ ██████╗████████╗ ██████╗ ██████╗ 
 ██║    ██║██╔════╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██╔═══██╗██╔══██╗
 ██║ █╗ ██║█████╗  ██████╔╝██║  ██║█████╗     ██║   █████╗  ██║        ██║   ██║   ██║██████╔╝
@@ -46,6 +48,7 @@ func printBanner() {
 ╚███╔███╔╝███████╗██████╔╝██████╔╝███████╗   ██║   ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
  ╚══╝╚══╝ ╚══════╝╚═════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
 `)
+    }
 }
 
 // loadPatterns loads the web detection patterns from the embedded JSON file
