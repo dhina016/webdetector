@@ -1,6 +1,7 @@
 package main
 
 import (
+    "embed"
     "bufio"
     "crypto/tls"
     "encoding/csv"
@@ -14,6 +15,8 @@ import (
     "strings"
     "time"
 )
+
+var patternJSON embed.FS
 
 type Web struct {
     ID            string   `json:"id"`
@@ -42,7 +45,7 @@ func printBanner() {
 
 func loadPatterns(filename string) ([]Web, error) {
     var webList []Web
-    bytes, err := ioutil.ReadFile(filename)
+    bytes, err := patternJSON.ReadFile(filename)
     if err != nil {
         return nil, err
     }
@@ -129,7 +132,7 @@ func processURL(url string, webList []Web, timeout time.Duration, strict bool, f
 
 func main() {
     // Print banner
-    // printBanner()
+    printBanner()
 
     // Define flags
     list := flag.String("l", "", "Specify a file containing a list of domains")
@@ -146,7 +149,6 @@ func main() {
 
     // Check for required flags
     if flag.NFlag() == 0 || (*list == "" && *url == "") {
-        printBanner()        
         flag.Usage()
         return
     }
@@ -156,7 +158,6 @@ func main() {
         // Read URLs from the file
         file, err := os.Open(*list)
         if err != nil {
-            printBanner()
             fmt.Fprintf(os.Stderr, "Failed to open file: %s\n", err)
             return
         }
@@ -169,14 +170,12 @@ func main() {
     } else if *url != "" {
         urls = append(urls, *url)
     } else {
-        printBanner()        
         flag.Usage()
         return
     }
 
     webList, err := loadPatterns("pattern.json")
     if err != nil {
-        printBanner()
         fmt.Fprintf(os.Stderr, "Error loading patterns: %s\n", err)
         return
     }
