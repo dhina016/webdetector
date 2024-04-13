@@ -16,8 +16,11 @@ import (
     "time"
 )
 
+// Embed the pattern.json file
+//go:embed pattern.json
 var patternJSON embed.FS
 
+// Web represents the structure of pattern data
 type Web struct {
     ID            string   `json:"id"`
     Patterns      []string `json:"patterns"`
@@ -26,12 +29,14 @@ type Web struct {
     Type          string   `json:"type"`
 }
 
+// DetectionResult represents the output format for detections
 type DetectionResult struct {
     URL  string `json:"url"`
     Web  string `json:"web"`
     Type string `json:"type"`
 }
 
+// printBanner prints a startup banner when the program is launched
 func printBanner() {
     fmt.Println(`
 ██╗    ██╗███████╗██████╗ ██████╗ ███████╗████████╗███████╗ ██████╗████████╗ ██████╗ ██████╗ 
@@ -39,27 +44,28 @@ func printBanner() {
 ██║ █╗ ██║█████╗  ██████╔╝██║  ██║█████╗     ██║   █████╗  ██║        ██║   ██║   ██║██████╔╝
 ██║███╗██║██╔══╝  ██╔══██╗██║  ██║██╔══╝     ██║   ██╔══╝  ██║        ██║   ██║   ██║██╔══██╗
 ╚███╔███╔╝███████╗██████╔╝██████╔╝███████╗   ██║   ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
- ╚══╝╚══╝ ╚══════╝╚═════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝                                                                                           
+ ╚══╝╚══╝ ╚══════╝╚═════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
 `)
 }
 
+// loadPatterns loads the web detection patterns from the embedded JSON file
 func loadPatterns(filename string) ([]Web, error) {
     var webList []Web
     bytes, err := patternJSON.ReadFile(filename)
     if err != nil {
-        return nil, err
+        return nil, fmt.Errorf("failed to read %s: %v", filename, err)
     }
 
     err = json.Unmarshal(bytes, &webList)
     if err != nil {
-        return nil, err
+        return nil, fmt.Errorf("failed to unmarshal JSON: %v", err)
     }
 
     return webList, nil
 }
 
+// fetchPageSource retrieves the HTML source of the specified URL
 func fetchPageSource(url string, timeout time.Duration, strict bool, followRedirect bool) (string, error) {
-    // Configure HTTP client
     client := &http.Client{
         Timeout: timeout,
         CheckRedirect: func(req *http.Request, via []*http.Request) error {
@@ -70,7 +76,6 @@ func fetchPageSource(url string, timeout time.Duration, strict bool, followRedir
         },
     }
 
-    // Strict certificate verification
     if strict {
         client.Transport = &http.Transport{
             TLSClientConfig: &tls.Config{InsecureSkipVerify: false},
@@ -95,6 +100,7 @@ func fetchPageSource(url string, timeout time.Duration, strict bool, followRedir
     return string(bytes), nil
 }
 
+// detectWeb identifies the web framework or technology used by a website based on the page source
 func detectWeb(webList []Web, pageSource string) Web {
     for _, web := range webList {
         for _, pattern := range web.Patterns {
@@ -113,11 +119,11 @@ func detectWeb(webList []Web, pageSource string) Web {
     return Web{}
 }
 
+// processURL processes a single URL to detect the web technology used
 func processURL(url string, webList []Web, timeout time.Duration, strict bool, followRedirect bool, logEnabled bool) DetectionResult {
     pageSource, err := fetchPageSource(url, timeout, strict, followRedirect)
     if err != nil {
         if logEnabled {
-            // Print error immediately
             fmt.Fprintf(os.Stderr, "Error fetching page source for %s: %s\n", url, err)
         }
         return DetectionResult{URL: url, Web: fmt.Sprintf("error: %s", err)}
@@ -130,11 +136,10 @@ func processURL(url string, webList []Web, timeout time.Duration, strict bool, f
     return DetectionResult{URL: url, Web: "unknown", Type: "web"}
 }
 
+// main is the entry point of the application
 func main() {
-    // Print banner
     printBanner()
 
-    // Define flags
     list := flag.String("l", "", "Specify a file containing a list of domains")
     url := flag.String("u", "", "Specify a single URL to check")
     outputFormat := flag.String("of", "text", "Output format (text, json, csv)")
@@ -147,7 +152,6 @@ func main() {
 
     timeout := time.Duration(*timeoutSec) * time.Second
 
-    // Check for required flags
     if flag.NFlag() == 0 || (*list == "" && *url == "") {
         flag.Usage()
         return
@@ -155,7 +159,6 @@ func main() {
 
     var urls []string
     if *list != "" {
-        // Read URLs from the file
         file, err := os.Open(*list)
         if err != nil {
             fmt.Fprintf(os.Stderr, "Failed to open file: %s\n", err)
@@ -184,7 +187,6 @@ func main() {
     for _, u := range urls {
         result := processURL(u, webList, timeout, *strict, *followRedirect, *logEnabled)
         results = append(results, result)
-        // Print result immediately with formatting
         if result.Web == "unknown" || strings.HasPrefix(result.Web, "error") {
             fmt.Printf("%s \n", result.URL)
             continue
@@ -224,7 +226,6 @@ func main() {
     default:
         // Default to text output format
         if *outputFile != "" {
-            //fmt.Println("Writing text results to file:", *outputFile) // Add this line for debugging
             textResults := ""
             for _, result := range results {
                 textResults += fmt.Sprintf("%s [%s:%s]\n", result.URL, result.Type, result.Web)
