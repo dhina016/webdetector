@@ -38,16 +38,18 @@ go build -o webdetector
 
 ### Examples
 
+**Note: Always use -fd flag for accurate result**
+
 Check a single URL and print the result in JSON format:
 
 ```bash
-./webdetector -u http://example.com -of json
+./webdetector -fd -u http://example.com -of json
 ```
 
 Process a list of URLs from a file, follow redirects, and write output in CSV format to a file:
 
 ```bash
-./webdetector -l urls.txt -fd -of csv -o results.csv
+./webdetector -fd -l urls.txt -fd -of csv -o results.csv
 ```
 
 ## Running with Docker
@@ -61,7 +63,7 @@ docker build -t webdetector .
 Run WebDetector inside a Docker container:
 
 ```bash
-docker run --rm -v $(pwd):/data webdetector -l /data/urls.txt -of json
+docker run --rm -v $(pwd):/data webdetector -fd -l /data/urls.txt -of json
 ```
 
 ## Contributing
