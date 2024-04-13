@@ -760,7 +760,9 @@
             "ContensisSubmitFromTextbox",
             "ContensisTextOnly"
         ],
-        "regexPatterns": []
+        "regexPatterns": [],
+        "name": "Contensis",
+        "url": "https://www.contensis.com/"
     },
     {
         "id": "contao",
@@ -796,15 +798,6 @@
         "url": "https://www.concrete5.org/"
     },
     {
-        "id": "discrs",
-        "type":"CMS",
-        "patterns": [
-            "discourse_theme_id",
-            "discourse_current_homepage"
-        ],
-        "regexPatterns": []
-    },
-    {
         "id": "discuz",
         "type":"CMS",
         "patterns": [
@@ -835,17 +828,9 @@
             "js/ipb.js",
             "js/ipb.lang.js"
         ],
-        "regexPatterns": [],
-        "name": "IP.Board community forum",
-        "url": "https://www.invisioncommunity.com/"
-    },
-    {
-        "id": "ipb",
-        "type":"CMS",
-        "patterns": [
-            "ips_usernameand ips_password"
+        "regexPatterns": [
+            "ips_(username|password)"
         ],
-        "regexPatterns": [],
         "name": "IP.Board community forum",
         "url": "https://www.invisioncommunity.com/"
     },
@@ -1540,7 +1525,10 @@
     {
         "id": "dscrs",
         "type":"CMS",
-        "patterns": [],
+        "patterns": [
+            "discourse_theme_id",
+            "discourse_current_homepage"
+        ],
         "regexPatterns": [
             "Discourse\\.(.*?)\\=(.*?)\\</script\\>"
         ],
