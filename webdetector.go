@@ -47,6 +47,7 @@ func printBanner() {
 ██║███╗██║██╔══╝  ██╔══██╗██║  ██║██╔══╝     ██║   ██╔══╝  ██║        ██║   ██║   ██║██╔══██╗
 ╚███╔███╔╝███████╗██████╔╝██████╔╝███████╗   ██║   ███████╗╚██████╗   ██║   ╚██████╔╝██║  ██║
  ╚══╝╚══╝ ╚══════╝╚═════╝ ╚═════╝ ╚══════╝   ╚═╝   ╚══════╝ ╚═════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝
+                                                                                  by dhina016
 `)
     }
 }
@@ -68,7 +69,7 @@ func loadPatterns(filename string) ([]Web, error) {
 }
 
 // fetchPageSource retrieves the HTML source of the specified URL
-func fetchPageSource(url string, timeout time.Duration, strict bool, followRedirect bool) (string, error) {
+func fetchPageSource(url string, timeout time.Duration, strict bool, followRedirect bool, verbose bool) (string, error) {
     client := &http.Client{
         Timeout: timeout,
         CheckRedirect: func(req *http.Request, via []*http.Request) error {
@@ -89,15 +90,29 @@ func fetchPageSource(url string, timeout time.Duration, strict bool, followRedir
         }
     }
 
-    resp, err := client.Get(url)
+    req, _ := http.NewRequest("GET", url, nil)
+    if verbose {
+        fmt.Println("Request:", req)
+    }
+
+    resp, err := client.Do(req)
     if err != nil {
         return "", err
     }
     defer resp.Body.Close()
 
+    if verbose {
+        fmt.Println("Response Status:", resp.Status)
+        fmt.Println("Response Headers:", resp.Header)
+    }
+
     bytes, err := ioutil.ReadAll(resp.Body)
     if err != nil {
         return "", err
+    }
+
+    if verbose {
+        fmt.Println("Response Body:", string(bytes))
     }
 
     return string(bytes), nil
@@ -123,8 +138,8 @@ func detectWeb(webList []Web, pageSource string) Web {
 }
 
 // processURL processes a single URL to detect the web technology used
-func processURL(url string, webList []Web, timeout time.Duration, strict bool, followRedirect bool, logEnabled bool) DetectionResult {
-    pageSource, err := fetchPageSource(url, timeout, strict, followRedirect)
+func processURL(url string, webList []Web, timeout time.Duration, strict bool, followRedirect bool, logEnabled bool, verbose bool) DetectionResult {
+    pageSource, err := fetchPageSource(url, timeout, strict, followRedirect, verbose)
     if err != nil {
         if logEnabled {
             fmt.Fprintf(os.Stderr, "Error fetching page source for %s: %s\n", url, err)
@@ -139,6 +154,13 @@ func processURL(url string, webList []Web, timeout time.Duration, strict bool, f
     return DetectionResult{URL: url, Web: "unknown", Type: "web"}
 }
 
+func listAllPatterns(webList []Web) {
+    for i, web := range webList {
+        fmt.Printf("%d. Type: %s - Name: %s\n", i+1, web.Type, web.Name)
+    }
+}
+
+
 // main is the entry point of the application
 func main() {
     printBanner()
@@ -151,7 +173,20 @@ func main() {
     strict := flag.Bool("s", false, "Strict certificate verification")
     followRedirect := flag.Bool("fd", false, "Follow redirects if the domain is redirecting")
     logEnabled := flag.Bool("log", false, "Specify -log if you want error logging")
+    verbose := flag.Bool("v", false, "Enable verbose output for debugging (prints HTTP request and response details)")
+    listPatterns := flag.Bool("pattern", false, "List all detection patterns")
+
     flag.Parse()
+    
+    if *listPatterns {
+        webList, err := loadPatterns("pattern.json")
+        if err != nil {
+            fmt.Fprintf(os.Stderr, "Error loading patterns: %s\n", err)
+            return
+        }
+        listAllPatterns(webList)
+        return // Exit after listing patterns
+    }
 
     timeout := time.Duration(*timeoutSec) * time.Second
 
@@ -188,7 +223,7 @@ func main() {
 
     var results []DetectionResult
     for _, u := range urls {
-        result := processURL(u, webList, timeout, *strict, *followRedirect, *logEnabled)
+        result := processURL(u, webList, timeout, *strict, *followRedirect, *logEnabled, *verbose)
         results = append(results, result)
         if result.Web == "unknown" || strings.HasPrefix(result.Web, "error") {
             fmt.Printf("%s \n", result.URL)
