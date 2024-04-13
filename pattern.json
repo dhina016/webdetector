@@ -177,6 +177,17 @@
         "url": "https://www.squiz.net/technology/cms"
     },
     {
+        "id": "aem",
+        "type":"CMS",
+        "patterns": [
+        ],
+        "regexPatterns": [
+            "aem-(?:GridColumn|apps/)"
+        ],
+        "name": "Adobe Experience Manager",
+        "url": "https://business.adobe.com/"
+    },
+    {
         "id": "spin",
         "type":"CMS",
         "patterns": [
